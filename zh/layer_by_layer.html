@@ -264,7 +264,7 @@ HAL示例如下所示：</p>
 </ul>
 </div>
 <div class="paragraph">
-<p>当调用 <code>button.await_for_any_edge().await</code> 时，执行器将暂停主任务并使微控制器进入睡眠模式，除非有其他任务可以运行。在内部，Embassy HAL已经为按钮配置了中断处理程序（在 <code>ExtiButton</code> 中），因此每当中断被触发时，正在等待按钮的任务就会被唤醒。</p>
+<p>当调用 <code>button.await_for_any_edge().await</code> 时，执行器将暂停主任务并使MCU进入睡眠模式，除非有其他任务可以运行。在内部，Embassy HAL已经为按钮配置了中断处理程序（在 <code>ExtiButton</code> 中），因此每当中断被触发时，正在等待按钮的任务就会被唤醒。</p>
 </div>
 <div class="paragraph">
 <p>执行器的最小开销和能够“并发”运行多个任务的能力，加上应用程序的极大简化，使得 <code>async</code> 非常适合嵌入式开发.</p>
