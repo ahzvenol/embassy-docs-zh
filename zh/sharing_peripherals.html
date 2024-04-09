@@ -230,7 +230,7 @@ async fn toggle_led(led: &amp;'static LedType, delay: Duration) {
 <div class="sect3">
 <h4 id="_outputanypin"><a class="anchor" href="#_outputanypin"></a><code>Output&lt;AnyPin&gt;</code></h4>
 <div class="paragraph">
-<p>这表示引脚将被设置为输出。 <code>AnyPin</code> 可以是`embassy_rp::peripherals::PIN_25`，但是这样做使 <code>toggle_led</code> 函数更通用。</p>
+<p>这表示引脚将被设置为输出。 <code>AnyPin</code> 可以是`embassy_rp::peripherals::PIN_25`，但是不这样做使 <code>toggle_led</code> 函数更通用。</p>
 </div>
 </div>
 </div>
