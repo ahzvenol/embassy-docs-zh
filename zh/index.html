@@ -174,11 +174,8 @@
 <div class="paragraph">
 <p>Embassy项目包括几个可以一起使用，也可以独立使用的crate：</p>
 </div>
-<div class="sect2">
-<h3 id="_执行器executor"><a class="anchor" href="#_执行器executor"></a>执行器（Executor）</h3>
 <div class="paragraph">
 <p><a href="https://docs.embassy.dev/embassy-executor/">embassy-executor</a> 是一个异步/等待（async/await）执行器，通常在启动时执行固定数量的任务，但稍后可以添加更多任务。执行器还可以提供一个系统计时器，您可以用它来进行异步和阻塞延迟。但对于少于一微秒的延迟，应该使用阻塞延迟，因为上下文切换（context-switching）的成本太高，执行器无法提供准确的计时。</p>
-</div>
 </div>
 <div class="sect2">
 <h3 id="_硬件抽象层hardware_abstraction_layers"><a class="anchor" href="#_硬件抽象层hardware_abstraction_layers"></a>硬件抽象层（Hardware Abstraction Layers）</h3>
