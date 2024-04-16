@@ -6,7 +6,7 @@
 
 == `stm32-data-sources`
 
-link:https://github.com/embassy-rs/stm32-data-sources[`stm32-data-sources`] 是一个几乎空白的仓库。它没有README，没有文档，watcher也很少。但它使 `embassy-stm32`  成为可能。我们支持的每个芯片的部分数据来自于相应的XML文件，例如 link:https://github.com/embassy-rs/stm32-data-sources/blob/b8b85202e22a954d6c59d4a43d9795d34cff05cf/cubedb/mcu/STM32F051K4Ux.xml[`STM32F051K4Ux.xml`] 。在该文件中，您会看到类似于下面的内容：
+link:https://github.com/embassy-rs/stm32-data-sources[`stm32-data-sources`] 是一个几乎空白的仓库。它没有README，没有文档，watcher也很少。但它使 `embassy-stm32`  成为可能。我们支持的芯片的部分数据来自于相应的XML文件，例如 link:https://github.com/embassy-rs/stm32-data-sources/blob/b8b85202e22a954d6c59d4a43d9795d34cff05cf/cubedb/mcu/STM32F051K4Ux.xml[`STM32F051K4Ux.xml`] 。在该文件中，您会看到类似于下面的内容：
 
 [source,xml]
 ----
@@ -15,7 +15,7 @@ link:https://github.com/embassy-rs/stm32-data-sources[`stm32-data-sources`] 是�
     <IP ConfigFile="TIM-STM32F0xx" InstanceName="TIM1" Name="TIM1_8F0" Version="gptimer2_v2_x_Cube"/>
 ----
 
-这些内容表明这个芯片有一个i2c，其版本为 “v1_1”。它还表明它有一个版本为 “v2_x” 的通用定时器。根据这些数据，我们可以确定要在 `embassy-stm32` 中写哪些实现。但实际上，做到这一点又是另外一回事。
+这些内容表明这个芯片有一个i2c，其版本为 “v1_1”。它还表明它有一个版本为 “v2_x” 的通用定时器。根据这些数据，我们可以确定要在 `embassy-stm32` 中包含哪些实现。但实际上，做到这一点又是另外一回事。
 
 
 == `stm32-data`
